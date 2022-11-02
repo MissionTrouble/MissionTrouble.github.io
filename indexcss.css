@@ -1,6 +1,7 @@
 body {
-    background-color: rgb(20, 20, 20);
     margin: 0px;
+    background: #000000;
+    background: linear-gradient(to right, #000000 0%, #222222 50%, #383838 100%);
 }
 
 #menu {
@@ -34,11 +35,10 @@ body {
 
 
 #menu-background-pattern {
-    background-image: radial-gradient(
+    background: radial-gradient(
             rgba(255, 255, 255, 0.1) 9%,
             transparent 9%
-    );
-    background-position: 0% 0%;
+    ) 0% 0%;
     background-size: 12vmin 12vmin;
     height: 100vh;
     left: 0px;
@@ -48,7 +48,8 @@ body {
     background-size 800ms ease,
     background-position 800ms ease;
     width: 100vw;
-    z-index: 1;
+
+
 }
 
 #menu-items:hover ~ #menu-background-pattern {

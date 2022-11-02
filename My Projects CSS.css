@@ -1,7 +1,10 @@
 body {
-    background-color: rgb(20, 20, 20);
     margin: 0px;
+    background: #000000;
+    background: -moz-linear-gradient(left, #000000 0%, #333333 50%, #4C4C4C 100%);
+
 }
+
 
 
 .header {
