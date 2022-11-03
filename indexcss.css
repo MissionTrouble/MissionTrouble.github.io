@@ -12,7 +12,7 @@ body {
 }
 
 #menu-items {
-    margin-left: clamp(4rem, 20vw, 48rem);
+    margin-left: clamp(1rem, 5vw, 12rem);
     position: relative;
     z-index: 2;
 }
@@ -35,10 +35,8 @@ body {
 
 
 #menu-background-pattern {
-    background: radial-gradient(
-            rgba(255, 255, 255, 0.1) 9%,
-            transparent 9%
-    ) 0% 0%;
+    background: linear-gradient(to bottom, #000000 0%, #080808 50%, #111111 100%);
+
     background-size: 12vmin 12vmin;
     height: 100vh;
     left: 0px;
@@ -71,7 +69,6 @@ body {
     display: block;
     font-family: 'Ibarra Real Nova', serif;
     font-size: clamp(3rem, 8vw, 8rem);
-    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     text-decoration: none;
     transition: opacity 400ms ease;
 }
