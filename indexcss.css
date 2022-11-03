@@ -3,6 +3,19 @@ body {
     background: #000000;
     background: linear-gradient(to right, #000000 0%, #222222 50%, #383838 100%);
 }
+h1{
+    display: none;
+}
+.text{
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(0.5rem, 1vw, 2rem);
+    text-decoration: none;
+    transition: opacity 400ms ease;
+}
 
 #menu {
     align-items: center;

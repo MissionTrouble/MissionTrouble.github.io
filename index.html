@@ -6,12 +6,83 @@
 </head>
 <div id = "menu">
     <div id = "menu-items">
-        <a href="Me.html" class="menu-item">About Me</a>
-        <a href="Resume.html" class="menu-item">Resume</a>
-        <a href="My%20Projects.html" class="menu-item">My Projects</a>
-        <a href="Contact%20Me.html" class="menu-item">Contact Me</a>
+        <a onclick="me()" class="menu-item">About Me</a>
+        <a onclick="Resume()" class="menu-item">Resume</a>
+        <a onclick="MyProject()" class="menu-item">My Projects</a>
+        <a onclick="Contact()" class="menu-item">Contact Me</a>
+    </div>
+    <div class = "text">
+        <div>
+            <h1 id = "Me"> ABOUT ME TEXT</h1>
+        </div>
+        <div>
+            <h1 id = "Resume"> RESUME</h1>
+        </div>
+        <div>
+            <h1 id = "My Projects"> PROJECTS</h1>
+        </div>
+        <div>
+            <h1 id = "Contact Me"> CONTACT</h1>
+        </div>
     </div>
     <div id="menu-background-pattern"></div></div>
+<script>
+    function me() {
+        var x = document.getElementById("Me");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        var y = document.getElementById("Resume");
+        y.style.display = "none";
+        var z = document.getElementById("My Projects");
+        z.style.display = "none";
+        var i = document.getElementById("Contact Me");
+        i.style.display = "none";
+    }
+    function Resume() {
+        var x = document.getElementById("Me");
+        x.style.display = "none";
+        var y = document.getElementById("Resume");
+        if (y.style.display === "block") {
+            y.style.display = "none";
+        } else {
+            y.style.display = "block";
+        }
+        var z = document.getElementById("My Projects");
+        z.style.display = "none";
+        var i = document.getElementById("Contact Me");
+        i.style.display = "none";
+    }
+    function MyProject() {
+        var x = document.getElementById("Me");
+        x.style.display = "none";
+        var y = document.getElementById("Resume");
+        y.style.display = "none";
+        var z = document.getElementById("My Projects");
+        if (z.style.display === "block") {
+            z.style.display = "none";
+        } else {
+            z.style.display = "block";
+        };
+        var i = document.getElementById("Contact Me");
+        i.style.display = "none";
+    }
+    function Contact() {
+        var x = document.getElementById("Me");
+        x.style.display = "none";
+        var y = document.getElementById("Resume");
+        y.style.display = "none";
+        var z = document.getElementById("My Projects");
+        z.style.display = "none";
+        var i = document.getElementById("Contact Me");
+        if (i.style.display === "block") {
+            i.style.display = "none";
+        } else {
+            i.style.display = "block";
+        }    }
+</script>
 <script>
 const menu = document.getElementById("menu");
 
