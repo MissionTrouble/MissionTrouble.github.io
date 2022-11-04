@@ -1,20 +1,19 @@
 body {
-    margin: 0px;
-    background: #000000;
-    background: linear-gradient(to right, #000000 0%, #222222 50%, #383838 100%);
+    margin: 0;
+    background: linear-gradient(to right, #000000 0, #222222 50%, #4c4c4c 100%);
 }
 h1{
     display: none;
-}
-.text{
     color: white;
-    cursor: pointer;
-    display: flex;
-    align-items: flex-start;
     font-family: 'Ibarra Real Nova', serif;
-    font-size: clamp(0.5rem, 1vw, 2rem);
-    text-decoration: none;
-    transition: opacity 400ms ease;
+    text-align: right;
+}
+
+.text{
+    position: relative;
+    margin-left: 100px;
+    text-align: center;
+    z-index: 2;
 }
 
 #menu {
@@ -31,33 +30,32 @@ h1{
 }
 
 #menu[data-active-index="0"] > #menu-background-pattern {
-    background-position: 0% -25%;
+    background-position:0 -25%;
 }
 
 #menu[data-active-index="1"] > #menu-background-pattern {
-    background-position: 0% -50%;
+    background-position:0 -50%;
 }
 
 #menu[data-active-index="2"] > #menu-background-pattern {
-    background-position: 0% -75%;
+    background-position:0 -75%;
 }
 
 #menu[data-active-index="3"] > #menu-background-pattern {
-    background-position: 0% -100%;
+    background-position:0 -100%;
 }
 
 
 #menu-background-pattern {
-    background: linear-gradient(to bottom, #000000 0%, #080808 50%, #111111 100%);
-
+    background: linear-gradient(to bottom, #000000 0, #080808 50%, #111111 100%);
     background-size: 12vmin 12vmin;
     height: 100vh;
-    left: 0px;
     position: absolute;
-    top: 0px;
+
     transition: opacity 800ms ease,
     background-size 800ms ease,
     background-position 800ms ease;
+
     width: 100vw;
 
 
@@ -65,15 +63,14 @@ h1{
 
 #menu-items:hover ~ #menu-background-pattern {
     background-size: 11vmin 11vmin;
-    opacity: 0.5;
-}
-
-#menu-items:hover > .menu-item {
     opacity: 0.3;
-}
 
+}
 #menu-items:hover > .menu-item:hover {
     opacity: 1;
+}
+#menu-items:hover > .menu-item {
+    opacity: 0.3;
 }
 
 .menu-item {
@@ -82,6 +79,5 @@ h1{
     display: block;
     font-family: 'Ibarra Real Nova', serif;
     font-size: clamp(3rem, 8vw, 8rem);
-    text-decoration: none;
-    transition: opacity 400ms ease;
+    transition: opacity 600ms ease;
 }
