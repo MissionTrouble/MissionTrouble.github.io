@@ -4,28 +4,40 @@
     <title>Nicholas McGrane</title>
     <link rel="stylesheet" href="indexcss.css">
 </head>
+<body>
 <div id = "menu">
     <div id = "menu-items">
-        <a onclick="me()" class="menu-item">About Me</a>
+        <a onclick="me()" class="menu-item">About&#0020Me</a>
         <a onclick="Resume()" class="menu-item">Resume</a>
-        <a onclick="MyProject()" class="menu-item">My Projects</a>
-        <a onclick="Contact()" class="menu-item">Contact Me</a>
+        <a onclick="MyProject()" class="menu-item">My&#0020Projects</a>
+        <a onclick="Contact()" class="menu-item">Contact&#0020Me</a>
     </div>
+    <div id="menu-background-pattern"></div>
     <div class = "text">
         <div>
-            <h1 id = "Me"> ABOUT ME TEXT</h1>
+            <h1 id = "Me"> ABOUT ME TEXT:<br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nunc ex, efficitur non dui accumsan, faucibus lacinia felis. Mauris ornare justo elit, sit amet rhoncus nisl pulvinar a. Suspendisse tristique diam vitae imperdiet lobortis. Sed tempus, sem quis hendrerit suscipit, metus leo interdum enim, vel gravida felis lacus ac orci. Nulla sed sapien elementum, accumsan ipsum non, ornare nibh. Integer maximus, turpis nec vestibulum suscipit, mauris ligula bibendum enim, vitae dapibus elit justo et nisl. Etiam et fermentum dui. Quisque eget libero vel orci pulvinar condimentum ut eu nisi. Sed imperdiet commodo ipsum, id venenatis nisl elementum sed. Donec porttitor tellus massa, convallis dictum erat commodo quis. Donec et ornare lacus. Quisque vel dapibus libero. Integer mollis justo et lacus efficitur condimentum. Suspendisse ut libero dui.
+            </h1>
         </div>
         <div>
-            <h1 id = "Resume"> RESUME</h1>
+            <h1 id = "Resume"> RESUME: <br>
+                Nullam in leo nisi. Phasellus lectus lectus, pellentesque nec enim vel, cursus maximus ex. Donec posuere orci eget erat consequat convallis. Proin dignissim urna id odio condimentum, sed placerat tortor scelerisque. Nullam ut eros et urna rhoncus pretium. Praesent bibendum odio mauris, quis convallis magna lacinia nec. Phasellus pharetra leo sed est lacinia dapibus. Nulla vel lectus volutpat, faucibus erat mattis, sollicitudin nisi. Duis sapien nisl, gravida a ligula suscipit, lobortis rutrum metus. Aliquam ipsum nulla, gravida in feugiat eu, pretium a sem. Curabitur ex ipsum, tincidunt ornare mi a, tempor blandit massa. Vivamus id lorem ut augue hendrerit dictum ac eu odio. Morbi vehicula quis nulla eu ornare. Nulla mi leo, mattis sit amet aliquet sollicitudin, ullamcorper quis sapien. Nulla ultricies ultricies risus, sit amet condimentum elit placerat id.
+            </h1>
         </div>
         <div>
-            <h1 id = "My Projects"> PROJECTS</h1>
+            <h1 id = "My Projects"> PROJECTS: <br>
+                Maecenas malesuada pharetra ante eget aliquam. Curabitur vitae urna nec lacus faucibus posuere in eu dui. Ut aliquet mauris vitae pharetra gravida. Suspendisse consectetur, quam vel tristique dictum, odio nibh congue purus, a tincidunt tortor ligula sit amet metus. Cras blandit, urna eget tristique varius, tortor nibh dapibus tellus, ac viverra sem sapien sit amet sem. Duis ullamcorper elementum molestie. Aliquam sit amet felis pharetra, posuere dui ac, mollis velit. Cras at cursus felis. Vestibulum vulputate ipsum nisl, non vehicula magna ullamcorper ac. Vivamus in ultricies elit.
+            </h1>
         </div>
         <div>
-            <h1 id = "Contact Me"> CONTACT</h1>
+            <h1 id = "Contact Me"> CONTACT: <br>
+                Duis mattis nisi eu magna tincidunt placerat. Maecenas bibendum laoreet massa, ut faucibus arcu gravida vel. Mauris viverra id nisl sed commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed vel orci vel nisl sagittis dapibus blandit sit amet purus. Pellentesque sed ultricies odio. Sed volutpat vel nunc vel ultricies. Sed ac faucibus odio. Sed aliquet rutrum tincidunt. Cras eu leo id mauris feugiat dapibus sed sed sem.
+            </h1>
         </div>
     </div>
-    <div id="menu-background-pattern"></div></div>
+</div>
+
+</body>
 <script>
     function me() {
         let x = document.getElementById("Me");
@@ -34,6 +46,7 @@
         } else {
             x.style.display = "block";
         }
+        console.log(x)
         let y = document.getElementById("Resume");
         y.style.display = "none";
         let z = document.getElementById("My Projects");
@@ -44,7 +57,7 @@
     function Resume() {
         let x = document.getElementById("Me");
         x.style.display = "none";
-        y = document.getElementById("Resume");
+        let y = document.getElementById("Resume");
         if (y.style.display === "block") {
             y.style.display = "none";
         } else {
